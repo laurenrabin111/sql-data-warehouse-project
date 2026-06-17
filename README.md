@@ -86,3 +86,11 @@ data-warehouse-project/
 ## License
 
 Licensed under the [MIT License](LICENSE).
+
+---
+
+## About Me
+
+Hi! I'm Lauren Rabin, and data has been a thread running through most of my career. What started as a natural affinity for working with numbers and spotting patterns has grown into a deliberate focus, building the technical depth to do this kind of work full time. Projects like this one reflect both where I've been and where I'm headed.
+
+Connect with me on [LinkedIn](https://www.linkedin.com/in/laurenrabin).
