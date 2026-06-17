@@ -1,67 +1,57 @@
-# Data Warehouse and Analytics Project
+# Sales Data Warehouse & Analytics
 
-A complete end-to-end data warehousing solution built on SQL Server, covering everything from raw data ingestion to business-ready analytics. This project was built as a portfolio piece to demonstrate practical skills in data engineering and analytics.
-
----
-
-## Architecture Overview
-
-This project follows the Medallion Architecture pattern with three distinct layers:
-
-1. **Bronze Layer** — Raw data landed directly from source CSV files into SQL Server, with no transformations applied.
-2. **Silver Layer** — Cleaned, standardized, and normalized data, ready for downstream use.
-3. **Gold Layer** — Business-ready tables structured as a star schema, optimized for reporting and analytical queries.
+An end-to-end data warehousing project built on SQL Server, integrating data from multiple source systems into a structured analytical model. The pipeline handles everything from raw ingestion through to business-ready reporting layers.
 
 ---
 
-## What This Project Covers
+## Architecture
 
-- **Data Warehouse Design** — Implementing Medallion Architecture (Bronze → Silver → Gold)
-- **ETL Pipelines** — Moving and transforming data from source systems into the warehouse
-- **Data Modeling** — Building fact and dimension tables suited for analytical workloads
-- **SQL Analytics** — Writing queries and reports that surface actionable business insights
+The warehouse is designed around the Medallion Architecture, organized into three layers:
 
-This is a great reference for anyone building skills in SQL development, data architecture, data engineering, ETL pipeline design, and data modeling.
-
----
-
-## Tools Used
-
-All tools below are free:
-
-- **[Datasets](datasets/)** — Source CSV files (ERP and CRM data)
-- **[SQL Server Express](https://www.microsoft.com/en-us/sql-server/sql-server-downloads)** — Local SQL Server instance
-- **[SSMS](https://learn.microsoft.com/en-us/sql/ssms/download-sql-server-management-studio-ssms?view=sql-server-ver16)** — GUI for database management
-- **[GitHub](https://github.com/)** — Version control and collaboration
-- **[DrawIO](https://www.drawio.com/)** — Diagrams and architecture visuals
-- **[Notion](https://www.notion.com/)** — Project planning and task tracking
+1. **Bronze** — Raw data ingested from CSV source files and loaded into SQL Server without modification.
+2. **Silver** — Cleansed, standardized, and normalized data prepared for analytical use.
+3. **Gold** — A star schema model containing fact and dimension tables optimized for reporting queries.
 
 ---
 
-## Project Scope
+## Project Highlights
 
-### Data Engineering
-
-**Goal:** Build a consolidated data warehouse from two source systems (ERP and CRM) that supports analytical reporting.
-
-Key decisions and constraints:
-- Source data arrives as CSV files
-- Data quality issues are resolved during the Silver layer transformation
-- Both source systems are unified into a single star schema model
-- Only the current snapshot of data is loaded — no historical tracking
-- The final data model is documented for both technical and business audiences
+- Designed and implemented a multi-layer data warehouse from scratch
+- Built ETL pipelines to extract, transform, and load data from ERP and CRM source systems
+- Modeled fact and dimension tables to support efficient analytical queries
+- Wrote SQL-based reports surfacing insights across customer behavior, product performance, and sales trends
 
 ---
 
-### Analytics & Reporting
+## Tech Stack
 
-**Goal:** Deliver SQL-based insights across three key areas:
+- **SQL Server Express** — Database engine
+- **SSMS** — Query development and database management
+- **DrawIO** — Architecture and data flow diagrams
+- **Git / GitHub** — Version control
 
-- **Customer Behavior** — Who is buying, how often, and what patterns emerge
-- **Product Performance** — Which products drive revenue and which underperform
-- **Sales Trends** — How performance changes over time
+---
 
-See [`docs/requirements.md`](docs/requirements.md) for the full analytics brief.
+## Data Sources
+
+Two source systems are integrated into the warehouse:
+
+- **ERP system** — Operational sales and product data
+- **CRM system** — Customer records and interaction data
+
+Both sources are unified into a single model designed for analytical queries against the current dataset.
+
+---
+
+## Analytics
+
+The Gold layer supports reporting across three areas:
+
+- **Customer Behavior** — Purchase patterns, frequency, and segmentation
+- **Product Performance** — Revenue contribution and trend analysis by product
+- **Sales Trends** — Period-over-period performance and growth metrics
+
+See [`docs/requirements.md`](docs/requirements.md) for the full scope.
 
 ---
 
@@ -80,8 +70,8 @@ data-warehouse-project/
 │   └── naming-conventions.md
 │
 ├── scripts/
-│   ├── bronze/            # Raw data load scripts
-│   ├── silver/            # Cleaning and transformation scripts
+│   ├── bronze/            # Raw ingestion scripts
+│   ├── silver/            # Transformation and cleansing scripts
 │   └── gold/              # Analytical model scripts
 │
 ├── tests/                 # Data quality checks
