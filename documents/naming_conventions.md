@@ -2,9 +2,9 @@
 
 ## General Principles
 
-- snake_case throughout — lowercase with underscores
-- English only
-- Avoid SQL reserved words
+- **Format**: snake_case throughout — lowercase with underscores
+- **Language**: English only
+- **Reserved Words**: Avoid SQL reserved words
 
 ---
 
