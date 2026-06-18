@@ -3,11 +3,13 @@
 Stored Procedure: Load Bronze Layer 
 ===============================================================================
 Script Purpose:
-    Truncates each bronze table and reloads it from the corresponding
-    source CSV file using BULK INSERT.
+	Loads data from external CSV files into the 'bronze' schema.
+    
+Actions: Truncates each bronze table and uses 'BULK INSERT' to reload it from the corresponding
+    source CSV file. 
 
-    Parameters : None
-    Usage example: EXEC bronze.load_bronze;
+Parameters : None
+Usage example: EXEC bronze.load_bronze;
 ===============================================================================
 */
 
