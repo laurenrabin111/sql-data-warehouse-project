@@ -93,4 +93,4 @@ Licensed under the [MIT License](LICENSE).
 
 Hi, I'm Lauren Rabin. I graduated from UC Santa Barbara in 2024 with a degree in Statistics and Data Science. Since then I've been working in healthcare where data is a big part of my day to day, and honestly it's the part I enjoy most. This project is my way of continuing to build on that and grow into a more technical data role.
 
-Connect with me on [Linkedin] (https://www.linkedin.com/in/laurenrabin).
+Connect with me on [LinkedIn](https://www.linkedin.com/in/laurenrabin).
