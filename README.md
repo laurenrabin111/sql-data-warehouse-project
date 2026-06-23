@@ -91,6 +91,6 @@ Licensed under the [MIT License](LICENSE).
 
 ## About Me
 
-Hi! I'm Lauren Rabin, and data has been a thread running through most of my career. What started as a natural affinity for working with numbers and spotting patterns has grown into a deliberate focus, building the technical depth to do this kind of work full time. Projects like this one reflect both where I've been and where I'm headed.
+Hi, I'm Lauren Rabin. I studied Statistics and Data Science and have spent my career in healthcare, where working with data has always been a big part of my day to day. I genuinely enjoy it, and this project is part of my effort to keep building on that and grow into a more technical data role.
 
-Connect with me on [LinkedIn](https://www.linkedin.com/in/laurenrabin).
+Connect with me on (https://www.linkedin.com/in/laurenrabin).
